@@ -99,3 +99,5 @@
 // else{
 //     console.log("Малой")
 // }
+// a = "Qwerty"
+// console.log(a.length) Длина чего то
