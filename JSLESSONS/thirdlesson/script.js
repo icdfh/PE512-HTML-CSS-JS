@@ -1,4 +1,4 @@
-// Функции
+//  ========= Функции =========
 
 // function sayHello(){
 //     console.log("Hello")
@@ -121,4 +121,64 @@
 // console.log(isEven(9))
 // console.log(add(1,2))
 // console.log(add2(2,2))
+
+// ========= Массивы =========
+
+// let numbers = [10,20,30,40,50,60]
+
+// numbers.push(70)
+// numbers.pop()
+// numbers.unshift(0)
+// numbers.shift()
+// console.log(numbers.includes(100))
+// console.log(numbers.indexOf(60))
+// console.log(numbers.slice(1,3))
+
+
+// for(let i = 0; i < numbers.length; i++){
+//     console.log(i,numbers[i]) 
+// }
+
+// let words = ["Я", "Учу", "Javascript"]
+// let a = words.join(" ")
+// console.log(a)
+
+// map -> Создать новый массив
+
+// let nums = [1,2,3,4]
+// let doubled = nums.map(num => num * 2)
+
+// console.log(doubled)
+
+// filter -> оставить только подходящие элементы
+
+// let nums = [1,2,3,4,5,6,7,8]
+// let evenNums = []
+
+// for(let i = 0; i < nums.length; i++){
+//     if(nums[i] % 2 === 0){
+//         evenNums.push(nums[i])
+//     }
+// }
+// console.log(evenNums)
+
+// let nums = [1,2,3,4,5,6,7,8]
+// let evenNums = nums.filter(num => num % 2 === 0)
+
+// console.log(evenNums)
+
+// let result = nums.find(clock => clock )
+// console.log(result)
+
+// let fruits = ["🍓", "🍐","🥑"]
+
+// fruits.forEach(fruit =>{
+//     console.log("Фрукт:", fruit)
+// } )
+
+let arr = [10, 20, 30, 40];
+arr.splice(1,3,50,30);
+
+console.log(arr);
+
 
