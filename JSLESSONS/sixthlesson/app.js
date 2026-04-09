@@ -94,11 +94,11 @@
 // })
 
 
-const btn = document.getElementById("btn")
+// const btn = document.getElementById("btn")
 
-btn.addEventListener("keydown", () =>{
-    alert("Кнопка нажата")
-})
+// btn.addEventListener("keydown", () =>{
+//     alert("Кнопка нажата")
+// })
 
 // click
 // mouseover
@@ -111,4 +111,42 @@ btn.addEventListener("keydown", () =>{
 // event.target.value
 // preventDefault
 // input -> 
+
+
+// const title = document.getElementById("title")
+// const changeBtn = document.getElementById("btn")
+
+// btn.addEventListener("click", () =>{
+//     title.textContent = "Новый текст"
+// })
+
+
+// const countEl = document.getElementById("count")
+// const plusBtn = document.getElementById("plus")
+// const minusBtn = document.getElementById("minus")
+
+// let count = 0
+
+// plusBtn.addEventListener("click",() =>{
+//     count++
+//     countEl.textContent = count
+// })
+// minusBtn.addEventListener("click",() =>{
+//     count--
+//     countEl.textContent = count
+// })
+
+const password = document.getElementById("password")
+const toggle = document.getElementById("togglePass")
+
+toggle.addEventListener("click", () =>{
+    if(password.type == "password"){
+        password.type = "text"
+        toggle.textContent = "Скрыть"
+    }
+    else{
+        password.type = "password"
+        toggle.textContent = "Показать"
+    }
+})
 
