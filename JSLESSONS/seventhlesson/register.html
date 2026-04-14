@@ -10,16 +10,32 @@
     
     <div class="container">
         <div class="navigation">
-         <a href="login.html">Login</a>
+            <a href="login.html">Login</a>
             <a href="register.html">Register</a>
         </div>
-        <form>
-            <input type="text" id="name">
-            <input type="text" id="email">
-            <input type="text" id="number">
-            <input type="password">
+
+        <form id="registerForm">
+            <input type="text" id="regName" placeholder="Name">
+            <p id="regNameError"></p>
+
+            <input type="text" id="regEmail" placeholder="Email">
+            <p id="regEmailError"></p>
+
+            <input type="text" id="regNumber" placeholder="Number">
+            <p id="regNumberError"></p>
+
+            <input type="password" id="regPassword" placeholder="Password">
+            <p id="regPasswordError"></p>
+
+            <label>
+                <input type="checkbox" id="showRegisterPassword">
+                Show password
+            </label>
+
+            <div class="btn">
+                <button type="submit">Register</button>
+            </div>
         </form>
-        <div class="btn"><a href="index.html">Register</a></div>
     </div>
 
     <script src="app.js"></script>
