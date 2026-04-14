@@ -105,12 +105,13 @@
 // mouseout
 // change
 // submit
-// keydown
+// keydown -> q
 
 // event
 // event.target.value
 // preventDefault
 // input -> 
+// BOM
 
 
 // const title = document.getElementById("title")
@@ -136,17 +137,30 @@
 //     countEl.textContent = count
 // })
 
-const password = document.getElementById("password")
-const toggle = document.getElementById("togglePass")
+// const password = document.getElementById("password")
+// const toggle = document.getElementById("togglePass")
 
-toggle.addEventListener("click", () =>{
-    if(password.type == "password"){
-        password.type = "text"
-        toggle.textContent = "Скрыть"
-    }
-    else{
-        password.type = "password"
-        toggle.textContent = "Показать"
-    }
+// toggle.addEventListener("click", () =>{
+//     if(password.type == "password"){
+//         password.type = "text"
+//         toggle.textContent = "Скрыть"
+//     }
+//     else{
+//         password.type = "password"
+//         toggle.textContent = "Показать"
+//     }
+// })
+
+
+const card = document.getElementById("card")
+const red = document.getElementById("red")
+const green = document.getElementById("green")
+
+red.addEventListener("click", () =>{
+    card.style.backgroundColor = "red"
 })
+green.addEventListener("click", () =>{
+    card.style.backgroundColor = "green"
+})
+
 
