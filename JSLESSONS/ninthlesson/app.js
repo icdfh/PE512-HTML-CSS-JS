@@ -39,6 +39,20 @@
 
 const themeBtn = document.getElementById("themeBtn")
 
+const loginInput = document.getElementById("loginInput")
+const loginText = document.getElementById("loginText")
+
+loginInput.addEventListener("input", () =>{
+    sessionStorage.setItem("current", loginInput.value)
+})
+
+const savedLogin = sessionStorage.getItem("current")
+
+if(savedLogin){
+    loginInput.value = savedLogin
+    loginText.textContent = savedLogin
+}
+
 function applyTheme(){
     const savedTheme = localStorage.getItem("theme")
 
