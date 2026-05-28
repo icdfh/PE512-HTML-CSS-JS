@@ -11,6 +11,8 @@ const [isVisible, setIsVisible] = useState(true)
 
 const [isLoggedIn, setIsLoggedIn] = useState(false)
 
+const [title, setTitle] = useState("")
+
 function toggleLogin(){
   setIsLoggedIn(!isLoggedIn)
 }
@@ -106,6 +108,17 @@ return(
         title = {course.title}
         price = {course.price}/>
       ))}
+    </div>
+
+    <div>
+      <h1>Название: {title}</h1>
+
+      <input 
+      type="range"
+      placeholder="Введите название"
+      value={title}
+      onChange={(event) => setTitle(event.target.value)}
+      />
     </div>
      
 
