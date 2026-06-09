@@ -1,7 +1,13 @@
+import {Outlet} from "react-router-dom"
+import Header from "../components/Header/Header"
+
 export default function MainLayout(){
     return(
-        <>
-            <h1>MainLayout</h1>
-        </>
+       <div>
+        <Header/>
+        <main className="main">
+            <Outlet/>
+        </main>
+       </div>
     )
 }
