@@ -8,8 +8,7 @@ export default function ProductDetailPage() {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    axios
-      .get(`https://dummyjson.com/products/${params.id}`)
+    axios.get(`https://dummyjson.com/products/${params.id}`)
       .then((response) => {
         console.log(response.data);
         setProduct(response.data);
