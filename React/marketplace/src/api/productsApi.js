@@ -10,7 +10,7 @@ export async function getProductById(id){
     const response = await axios.get(`${API_URL}/products/${id}`)
     return response.data
 }
-export async function getProductById(id){
+export async function searchProducts(query){
     const response = await axios.get(`${API_URL}/products/search?q=${query}`)
     return response.data
 }
