@@ -1,0 +1,155 @@
+/* Общие настройки страницы */
+.home_page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: radial-gradient(circle at top right, #1e1b4b, #0f172a);
+  color: #f8fafc;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Главный контейнер (Hero-секция) */
+.home_hero {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* --- Левая часть: Контент --- */
+.home_content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.home_title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.home_title span {
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home_text {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #94a3b8;
+  max-width: 480px;
+}
+
+/* Современная интерактивная кнопка */
+.home_button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 16px 32px;
+  background: #6366f1;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+}
+
+.home_button svg {
+  transition: transform 0.3s ease;
+}
+
+.home_button:hover {
+  background: #4f46e5;
+  box-shadow: 0 6px 24px rgba(99, 102, 241, 0.5);
+  transform: translateY(-2px);
+}
+
+.home_button:hover svg {
+  transform: translateX(4px);
+}
+
+/* --- Правая часть: Карточка (Стекломорфизм) --- */
+.home_card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.home_card h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #ffffff;
+  border-left: 4px solid #a855f7;
+  padding-left: 12px;
+}
+
+/* Красивый список в два столбца */
+.home_card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.home_card li {
+  font-size: 1rem;
+  color: #cbd5e1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.home_card li:hover {
+  transform: translateX(5px);
+  color: #ffffff;
+}
+
+/* --- Адаптивность под мобильные устройства --- */
+@media (max-width: 968px) {
+  .home_hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .home_content {
+    align-items: center;
+  }
+
+  .home_title {
+    font-size: 2.5rem;
+  }
+
+  .home_card h2 {
+    text-align: left;
+  }
+
+  .home_card li {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 968px) {
+  /* На планшетах список преимуществ делим на 2 колонки */
+  .home_card ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
