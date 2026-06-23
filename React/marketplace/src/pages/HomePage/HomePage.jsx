@@ -3,39 +3,72 @@ import "./HomePage.css";
 
 export default function HomePage() {
   return (
-    <div className="home_page">
-      <section className="home_hero">
-        <div className="home_content">
-          <h1 className="home_title">
-            Пространство <br />
-            <span>умных решений</span>
+    <main className="home-page">
+      <section className="home-hero">
+        <div className="home-content">
+          <div className="home-badge">
+            Новая коллекция 2026
+          </div>
+
+          <h1 className="home-title">
+            Гаджеты, которые делают жизнь проще
           </h1>
-          <p className="home_text">
-            Откройте для себя коллекцию гаджетов и аксессуаров нового поколения. 
-            Создано, чтобы менять привычный образ жизни.
+
+          <p className="home-text">
+            Подберите умные устройства, аксессуары и технику для дома, работы и путешествий.
+            Всё в одном месте — красиво, удобно и без лишнего шума.
           </p>
-          <Link to="/products" className="home_button">
-            Смотреть товары
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </Link>
+
+          <div className="home-actions">
+            <Link to="/products" className="home-button">
+              Смотреть товары
+            </Link>
+
+            <a href="#benefits" className="home-secondary">
+              Почему мы?
+            </a>
+          </div>
+
+          <div className="home-stats">
+            <div>
+              <strong>10k+</strong>
+              <span>клиентов</span>
+            </div>
+            <div>
+              <strong>2 года</strong>
+              <span>гарантии</span>
+            </div>
+            <div>
+              <strong>24/7</strong>
+              <span>поддержка</span>
+            </div>
+          </div>
         </div>
 
-        <div className="home_card">
-          <h2>Почему выбирают нас?</h2>
-          <ul>
-            <li>✨ Премиальное качество материалов</li>
-            <li>🚀 Бесплатная экспресс-доставка</li>
-            <li>🛡️ Гарантия 2 года на всё</li>
-            <li>💬 Поддержка 24/7 в Telegram</li>
-            <li>🔄 30 дней на обмен и возврат</li>
-            <li>💳 Удобная оплата долями</li>
-            <li>🎁 Бонусы с каждой покупки</li>
-            <li>🌍 Экологичная упаковка</li>
-            <li>🌱 Забота об окружающей среде</li>
-            <li>⭐ Более 10,000 довольных клиентов</li>
-          </ul>
+        <div className="home-preview">
+          <div className="preview-card preview-main">
+            <div className="preview-image">
+              <span>Smart</span>
+            </div>
+
+            <div className="preview-info">
+              <h3>Smart Home Kit</h3>
+              <p>Умный набор для дома</p>
+              <strong>89 990 тг</strong>
+            </div>
+          </div>
+
+          <div className="preview-card preview-small preview-top">
+            <span>🚀</span>
+            <p>Экспресс-доставка</p>
+          </div>
+
+          <div className="preview-card preview-small preview-bottom">
+            <span>⭐</span>
+            <p>4.9 рейтинг</p>
+          </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }
