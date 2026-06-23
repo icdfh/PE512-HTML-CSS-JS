@@ -18,11 +18,13 @@ export default function Header(){
                 <Link to="/">Home</Link>
                 <Link to="/products">Products</Link>
                 {token ? (<><Link to="/profile">Profile</Link>
+                 <Link to="/cart">Cart</Link>
                  <button onClick={handleLogout}>Logout</button></>) : 
                  (<>
                  <Link to="/login">Login</Link>
                  <Link to="/register">Register</Link>
                  </>)}
+                
 
                 
             </nav>

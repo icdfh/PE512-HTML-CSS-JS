@@ -9,6 +9,7 @@ import Login from "../pages/Login/Login"
 import Register from "../pages/Register/Register"
 import ProfilePage from "../pages/ProfilePage/ProfilePage"
 import NotFound from "../pages/NotFound/NotFound"
+import CartPage from "../pages/CartPage/CartPage"
 
 import ProtectedRoute from "../components/ProtectedRoute/ProtectedRoute"
 
@@ -21,7 +22,8 @@ export default function AppRouter(){
                 <Route path="/products/:id" element={<ProductDetailPage/>}/>
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/register" element={<Register/>}/>
-
+                <Route path="/cart" element={<CartPage/>}/>
+                
                 <Route path="/profile" 
                 element ={
                     <ProtectedRoute>
