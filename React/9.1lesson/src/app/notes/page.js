@@ -1,6 +1,8 @@
 import NotesClient from "../components/NotesClient"
 
+
 export default function NotesPage(){
+    
     return(
         <main className="page">
             <section className="page_head">
