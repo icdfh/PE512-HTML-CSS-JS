@@ -1,4 +1,4 @@
-import { Product } from "@/hooks/products";
+import { Product } from "@/types/products";
 
 type ProductCardProps = {
     product: Product
